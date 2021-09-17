@@ -1,5 +1,113 @@
+body{
+  background-image: url(./img/cover_bg_3.jpg);
+  position: relative;
+}
+html, body {
+  overflow: auto;
+}
+
+#app {
+  height: 100%;
+  min-height: 100vh;
+}
+button.app-button{
+  display: inline-block;
+  padding: 10px 30px;
+  border: 2px solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+  background: #fff0;
+  CURSOR: POINTER;
+}
+button.app-button:hover{
+color:#000000;
+background-color:#FFFFFF;
+  }
+.content{top: 20%; position: relative;}
+.content a.img-wrap{
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.rotate-scale-down:hover {
+	-webkit-animation: rotate-scale-down 0.65s linear both;
+	        animation: rotate-scale-down 0.65s linear both;
+}
+@-webkit-keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-down {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(0.5) rotateZ(180deg);
+            transform: scale(0.5) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
+p{
+  color: #fff;
+  font-size: 22px;
+}
+ h1 {
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: 300;
+  transform: rotate( 
+-5deg );
+  position: relative;
+  width: max-content;
+  margin: 30px auto;
+}
+img.logo{
+  background-color: #fff;
+}
+.social-link a{
+  color: #fff;
+  margin: 20px 10px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+.social-link a:hover{
+color: #3c8294 !important;
+}
 .App {
   text-align: center;
+  height: 100vh;
+  background: hsl(199deg 30% 19% / 95%);
+  overflow: auto;
 }
 
 .App-logo {
